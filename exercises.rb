@@ -202,8 +202,16 @@ end
 puts ages_add_one
 
 # Use reduce to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation.
-
-
+sum = ages_add_one.reduce(0) do |age, total|  #set initial value of total to 0
+  total = total + age
+end
+puts sum
 
 # Use select on your coin_flips array to make a new array that only includes the coin flips that successfully
-# landed on 'heads'.
+# landed on 'heads'
+
+heads_true = coin_heads.select do |result|
+  result == true
+end
+
+puts heads_true

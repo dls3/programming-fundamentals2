@@ -3,7 +3,7 @@ fav_colours = ["blue", "gray", "black", "purple", "white"]
 ages = [36, 31, 26, 34, 14]
 coin_heads = [true, false, false, true, false]
 performing_artists = ["eminem", "the killers", "oasis"]
-fav_colours_sym = [:'blue', :'gray', :'black', :'purple', :'white']
+fav_colours_sym = [:blue, :gray, :black, :purple, :white]
 
 
 words = {big: "of considerable size, extent, or intensity.",
@@ -45,10 +45,39 @@ movies[:'beaty and the beast'] = 1991, 2017
 puts movies
 
 #### Exercise 4 ####
+ages.each do |age|
+  if age < 30
+    puts age
+  end
+end
 
+puts ages.sort.last
+
+counter = 0
+coin_heads.each do |head|
+  if head == true
+    counter += 1
+  end
+end
+puts "Heads was flipped #{counter} times"
+
+#Remove eminimem (first artist in array)
+performing_artists.shift
+puts performing_artists
+
+#change vancouver population to 3M
+cities[:vancouver] = 3000000
 
 
 #### Exercise 5 ####
+
+
+
+
+
+
+
+
 
 
 #### Exercise 6 ####

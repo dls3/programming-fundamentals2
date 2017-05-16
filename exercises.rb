@@ -13,3 +13,11 @@ words = {big: "of considerable size, extent, or intensity.",
 movies = {anchorman: 2004, gladiator: 2000, goodwillhunting: 1997}
 cities = {vancouver: 2135201, montreal: 4098927, toronto: 5132794}
 siblings = {michael: 14, rebecca: 31, david: 34, ben: 35}
+
+
+#### Exercise 1 ####
+puts coin_heads
+puts fav_colours[0]
+puts ages.sort
+ages << 0
+puts movies[:anchorman]

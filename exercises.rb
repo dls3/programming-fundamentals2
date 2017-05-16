@@ -16,13 +16,13 @@ siblings = {'michael': 14, 'rebecca': 31, 'david': 34, 'ben': 35}
 
 #### Exercise 1 ####
 puts coin_heads
-puts fav_colours[0]
+puts fav_colours_sym[0]
 puts ages.sort
 ages << 0
 puts movies[:'anchorman']
 
 #### Exercise 2 ####
-puts fav_colours[fav_colours.length-1]
+puts fav_colours_sym[fav_colours_sym.length-1]
 cities[:'london'] = 9787426
 puts coin_heads.reverse
 puts cities[:'vancouver']
@@ -70,13 +70,33 @@ cities[:vancouver] = 3000000
 
 
 #### Exercise 5 ####
+#find total population of all cities in the cities hash
+tot_population = 0
+cities.each do |city, population|
+  tot_population = tot_population + population
+end
+puts tot_population
+
+siblings.each do |name, age|
+  if age > 30
+    puts "#{name} is old"
+  elsif
+    puts "#{name} is young"
+  end
+end
+
+#print last two colours of color array
+puts fav_colours_sym[fav_colours_sym.length - 2], fav_colours_sym[fav_colours_sym.length - 1]
+
+ages.each do |age|
+  age += 1
+  puts "Age plus one is #{age}"
+end
 
 
-
-
-
-
-
+# Add two new colours to array of favourite colours.
+fav_colours_sym.push(:crimson, :salmon)
+puts fav_colours_sym
 
 
 

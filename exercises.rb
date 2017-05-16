@@ -99,12 +99,6 @@ ages.each do |age|
 end
 puts ages
 
-# Using map
-# new_ages = ages.map do |age|
-#   age += 1
-# end
-# puts new_ages
-
 # Add two new colours to array of favourite colours.
 fav_colours_sym.push(:crimson, :salmon)
 puts fav_colours_sym
@@ -176,3 +170,40 @@ countries.each do |value|
   end
 end
 puts not_islands
+
+
+#### Exercise 7 ####
+#
+# Make a new array that consists of all the elements of your fav_colours and fav_artists arrays.
+fav_col_artists = fav_colours.push(*performing_artists)
+
+puts fav_col_artists
+puts fav_col_artists.length
+
+# Then sort the array and output it
+puts fav_col_artists.sort
+
+
+# Using the array of ages and the array of favourite artists, output a message for each pair of items. For example:
+
+performing_artists.each do |artist|
+  ages.each do |age|
+    puts "I <3 #{artist} #{age}"
+  end
+  puts "..."
+end
+
+# One year has gone by. Use map to create a new array of the ages of your friends/relatives where all of the ages
+# are increased by 1. Output the result.
+
+ages_add_one = ages.map do |age|
+  age += 1
+end
+puts ages_add_one
+
+# Use reduce to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation.
+
+
+
+# Use select on your coin_flips array to make a new array that only includes the coin flips that successfully
+# landed on 'heads'.

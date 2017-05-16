@@ -19,7 +19,7 @@ words = {big: "of considerable size, extent, or intensity.",
   small: "of a size that is less than normal or usual.",
   medium: "about halfway between two extremes"}
 # your favourite movie names and their year of creation
-movies = {'anchorman': 2004, gladiator: 2000, 'good will hunting': 1997}
+movies = {'anchorman': 2004, 'gladiator': 2000, 'good will hunting': 1997}
 # three cities of the world and their population
 cities = {'vancouver': 2135201, 'montreal': 4098927, 'toronto': 5132794}
 # the names of your siblings/cousins/friends and their ages
@@ -240,6 +240,7 @@ sum = ages_add_one.reduce(0) do |age, total|  #set initial value of total to 0
   total = total + age
 end
 puts sum
+
 
 # Use select on your coin_flips array to make a new array that only includes the coin flips that successfully
 # landed on 'heads'
